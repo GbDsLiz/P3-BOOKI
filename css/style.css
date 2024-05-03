@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -16,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .main-container {
@@ -23,6 +25,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 a {
@@ -34,6 +37,98 @@ a {
     margin: 0;
     font-size: 22px;
 }
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+ header img {
+    grid-area: logo;
+    align-self: flex-start;
+    height: 1.2rem;
+    margin-top: 13px;
+ }
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 69px;
+    margin: 23px 1px;   
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top:  #0065FC solid 5px;
+    padding-top: 20px;
+}
+
+.conteneur-filtre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+    font-size: clamp(12px, 3vw, 16px);
+}
+
+
+  
+  .filters ul {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .filters ul li {
+    display: inline;
+    margin-left: 25px;
+    font-weight: 700;
+    border: solid 2px #e2e2e2;
+    padding: 0 20px 0 0;
+    margin-top: 10px;
+    border-radius: 200px;
+  }
+  
+  .filters ul li:hover {
+    cursor: pointer;
+    background: #DEEBFF;
+    transition-duration: 0.25s;
+  }
+  
+  .filters ul li:hover .icon-filter {
+    background: white;
+    transition-duration: 0.25s;
+  }
+  
+  .icon-filter {
+    background-color: #DEEBFF;
+    color: #0065fc;
+    padding: 18px;
+    border-radius: 200px;
+    margin-right: 15px;
+  }
+  
+  .info .fas {
+    color: #0065fc;
+    font-size: 16px;
+    padding: 7px 11px 7px 11px;
+    border: solid 1px #D9D9D9;
+    border-radius: 2000px;
+    margin-right: 20px;
+  }
+  
+  .info p {
+    display: inline;
+  }
+  
+
 
 .card {
     background-color: white;
@@ -121,9 +216,37 @@ a {
     margin-bottom: 5px;
 }
 
+/********************* Footer *********************/
 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--fond);
+}
 
+.footer-infos, 
+.footer-hebergement, 
+.footer-assitance{
+    width: 30%; 
+}
 
+.footer-infos h2, 
+.footer-hebergement h2, 
+.footer-assitance h2{
+    margin-bottom: 20px;
+}
+
+.item-footer{
+    margin-bottom: 10px;
+    transition: color 0.4s ease-in-out;
+}
+
+.item-footer a:hover {
+    color: var(--principale);
+}
+  
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
