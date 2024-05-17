@@ -63,30 +63,44 @@ nav ul {
     margin: 23px 1px;   
 }
 
+ul {
+    list-style-type: none;
+}
+
 nav a:hover {
     color: #0065FC;
     border-top:  #0065FC solid 5px;
     padding-top: 20px;
 }
 
+p {
+    
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    
+}
+
+
+
 .conteneur-filtre{
     display: flex;
-    flex-wrap: wrap;
+    box-sizing: border-box;
     align-items: center;
-    margin: 30px 0;
-    font-size: clamp(12px, 3vw, 16px);
+   
 }
 
 
   
-  .filters ul {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
+  .filters-ul {
+    display: flex;
+    align-items: center;
   }
   
-  .filters ul li {
+  .filters-ul li {
     display: inline;
     margin-left: 25px;
     font-weight: 700;
@@ -96,19 +110,18 @@ nav a:hover {
     border-radius: 200px;
   }
   
-  .filters ul li:hover {
+  .filters-ul li:hover {
     cursor: pointer;
     background: #DEEBFF;
     transition-duration: 0.25s;
   }
   
-  .filters ul li:hover .icon-filter {
+  .filters-ul li:hover .icon-filter {
     background: white;
     transition-duration: 0.25s;
   }
   
   .icon-filter {
-    background-color: #DEEBFF;
     color: #0065fc;
     padding: 18px;
     border-radius: 200px;
@@ -121,14 +134,11 @@ nav a:hover {
     padding: 7px 11px 7px 11px;
     border: solid 1px #D9D9D9;
     border-radius: 2000px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   
   .info p {
-    display: inline;
-  }
-  
-
+    display: inline;  }
 
 .card {
     background-color: white;
@@ -166,10 +176,53 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+/****** Section Hebergements ***********/
+
+
+.main-hebergement{
+    margin: 0 auto;
+    display: flex;  
+    justify-content: space-between;
 }
+
+main span{
+    font-weight: bold;
+}
+
+.conteneur-hebergement{
+    width: 67%; 
+    padding: 40px;
+    border-radius: 30px;
+    background-color: var(--fond);
+}
+
+.conteneur-hebergement h2{
+    margin-bottom: 30px;
+}
+
+.box-carte-hebergement{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.carte-hebergement{
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 15px 0;
+    width: 31%;
+    height: 230px;
+    cursor: pointer;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
+    background-color: rgb(255, 255, 255);
+}
+
+.hebergement-img{
+    height: 60%;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -214,6 +267,41 @@ nav a:hover {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Activites *******/
+
+.main-activite{
+    margin-top: 40px;
+}
+
+.conteneur-card-activite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 100%;
+    gap: 2.6%;
+    margin: 20px 0 60px;
+}
+
+.conteneur-card-activite a{
+    position: relative;
+    width: 23%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
+}
+
+.card-activite{
+    height: 100%;
+}
+
+
+.carte-moyenne{
+    height: 300px;
 }
 
 /********************* Footer *********************/
