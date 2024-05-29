@@ -178,6 +178,9 @@ p {
 
 /****** Section Hebergements ***********/
 
+section.main-hebergements {
+    width: 65%;
+}
 .hebergements {
     
     display: flex;
@@ -188,9 +191,28 @@ p {
     background-color: #DEEBFF;
     border-radius: 30px;
 }
+.article-raw {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.article-raw .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-radius: 24px 24px 0 0;
+}
+
+
+
+.show-more {
+    font-weight: 700;
+    font-size: 18px;
+}
 
 .main-hebergement{
-    width: 67%; 
+
     margin: 0 auto;
     display: flex;  
     justify-content: space-between;
@@ -198,6 +220,14 @@ p {
 
 main span{
     font-weight: bold;
+}
+
+
+.section-title {
+
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
 .conteneur-hebergement{
@@ -290,33 +320,49 @@ main span{
     padding: 0 0px 0 0px;
    
 }
-.conteneur-activite-card {
+
+.section-title {
+
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.main-activite div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 0;
     margin-left: 25px;
 } 
 
-.activite-card .card {
+
+.conteneur-card-activite {
     display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 35px;
-}
-
-.activite-card img {
-    width: 100%;
-    height: 370px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    width: 23%;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 2rem;
     box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    
+}
+
+.conteneur-card-activite img {
+    width: 100%;
+    height: 400px;
+
 }
 
 
-
-.card-activite{
-    height: 100%;
+.conteneur-card-activite:hover {
+    transform: scale(1.05);
 }
+
 
 
 
@@ -328,17 +374,17 @@ footer{
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
     background-color: var(--fond);
 }
 
-.footer-infos, 
+.footer-a-propos, 
 .footer-hebergement, 
 .footer-assitance{
     width: 34%; 
 }
 
-.footer-infos h2, 
+.footer-a-propos h2, 
 .footer-hebergement h2, 
 .footer-assitance h2{
     margin-bottom: 15px;
