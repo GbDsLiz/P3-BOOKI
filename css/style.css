@@ -325,7 +325,7 @@ main span{
 
     font-size: 1.4rem;
     color: #333;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;;
 }
 
 .main-activite div {
@@ -349,6 +349,7 @@ main span{
     overflow: hidden;
     transition: transform 0.3s ease;
     flex-direction: column;
+    font-weight: bold;
     
 }
 
@@ -389,6 +390,16 @@ footer{
 .footer-assitance h2{
     margin-bottom: 15px;
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
 
 .item-footer{
     margin-bottom: 10px;
