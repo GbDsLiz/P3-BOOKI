@@ -326,6 +326,8 @@ main span{
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 1.5rem;;
+    padding-left: 15px;
+    margin-top: 10x;
 }
 
 .main-activite div {
@@ -333,7 +335,7 @@ main span{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 0;
-    margin-left: 25px;
+    margin-left: 20px;
 } 
 
 
@@ -342,8 +344,8 @@ main span{
     width: 23%;
     background: #fff;
     border: 2px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1,5rem;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -355,7 +357,8 @@ main span{
 
 .conteneur-card-activite img {
     width: 100%;
-    height: 400px;
+    height: 389px;
+    
 
 }
 
@@ -372,11 +375,12 @@ main span{
 
 footer{
     display: flex;
+    background:#F2F2F2;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: space-between;
     padding: 30px;
-    background-color: var(--fond);
+    
 }
 
 .footer-a-propos, 
